@@ -1,0 +1,4 @@
+CREATE TRIGGER trigger_goles
+AFTER INSERT ON goles
+FOR EACH ROW
+EXECUTE PROCEDURE gol_trigger();

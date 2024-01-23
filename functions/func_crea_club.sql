@@ -1,0 +1,6 @@
+CREATE FUNCTION crear_club(club text) RETURNS VOID LANGUAGE PLPGSQL AS
+$FUNC$
+BEGIN
+INSERT INTO clubes(nombre) VALUES(club);
+END;
+$FUNC$ 
